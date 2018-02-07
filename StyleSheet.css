@@ -1,0 +1,100 @@
+﻿body {
+    background-color: #666633;
+    font-family: Courier New, Courier, monospace, sans-serif;
+}
+
+/*icon in the center - starts animation*/
+#wikiicon {
+    padding: 9px 3px 7px 3px;
+    border: 3px solid black;
+    border-radius: 50%;
+    margin-left: 48%;
+    position: absolute;
+}
+
+    #wikiicon:hover {
+        background-color: white;
+    }
+
+ /*the element containing search form and buttons*/
+#inputstuff {
+    list-style-type: none;
+    border: 2px solid orange;
+    border-radius: 15px;
+    width: 0; /*change made to 190px*/
+    height: 0; /*change made to 18px*/
+    position: absolute;
+    margin-left: 43%;
+    margin-top: 0;
+    padding-top: 0px; /*to change later to 6px*/
+    padding-bottom: 0px;
+    overflow: auto;
+}
+
+/*input form for search*/
+#searchform {
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    border: none;
+    padding: 0;
+    margin-left: -22px;
+    background-color: inherit;
+    font-size: 15px;
+    height:30px
+}
+
+    input:focus {
+        outline: none;
+    }
+
+#searchicon {
+    opacity: 0;
+    color: black;
+}
+
+#footer {
+    text-align: center;
+    margin-top: 100px;
+}
+/*container where cards are located*/
+#containerRel {
+    position: relative;
+}
+/*container moving in relation to containerRel*/
+#containerAbs {
+    position: absolute;
+    margin-top: 700px;
+    width: 100%;
+}
+/*cards*/
+[id^="card_"] {
+    background-color: white;
+    width: 80%;
+    min-height: 20px;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-left: 3px solid #666633;
+}
+
+    [id^="card_"]:hover {
+        border-left: 3px solid orange;
+        text-decoration: none;
+    }
+
+.linksRes {
+    text-decoration: none;
+    color: inherit;
+}
+
+.invisible{
+    display:none;
+}
